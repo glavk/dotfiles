@@ -1,0 +1,131 @@
+tap "1password/tap"
+tap "aws/tap"
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "minamijoyo/hcledit"
+tap "railwaycat/emacsmacport"
+
+## Programming languages
+brew "go"
+brew "gopls"
+brew "node"
+brew "python@3.12"
+
+## Dependencies for programming languages
+# required by emacs, gnupg and gnutls
+brew "unbound"
+brew "gnupg"
+
+## IDE with tools
+brew "ipython"
+brew "neovim"
+brew "emacs"
+brew "yamllint"
+brew "shellcheck"
+brew "staticcheck"
+brew "hadolint"
+brew "pre-commit"
+brew "git"
+brew "git-secrets"
+brew "git-vendor"
+# Sort Python imports automatically
+brew "isort"
+brew "python-markupsafe"
+brew "iredis"
+brew "jq"
+
+## Ansible
+brew "ansible"
+brew "ansible-lint"
+brew "ansible-language-server"
+brew "molecule"
+
+## Hashicorp tools: terraform, packer
+brew "terraform"
+brew "hashicorp/tap/terraform-ls"
+brew "terraform-docs"
+brew "terraformer", args: ["HEAD"]
+brew "terragrunt"
+brew "terrascan"
+brew "tfk8s"
+brew "tflint"
+brew "tfsec"
+brew "hashicorp/tap/packer"
+brew "localstack"
+brew "minamijoyo/hcledit/hcledit"
+
+## AWS
+brew "awscli"
+cask "aws-vault"
+brew "infracost"
+
+## Kubernetes
+brew "kubernetes-cli"
+brew "krew"
+brew "kubectx"
+brew "k9s"
+brew "helm"
+brew "minikube"
+# Command-line interactive controller for Kubernetes: REPL for to manage a large number of Kubernetes clusters/objects quickly and efficiently
+brew "click"
+
+## GitHub
+brew "gh"
+# Running GitHub Actions locally
+brew "act"
+
+
+brew "asciinema"
+brew "bash-completion"
+brew "fontconfig"
+
+brew "cmake"
+brew "coreutils"
+brew "gnutls"
+
+## Utils
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Ping, but with a graph
+brew "gping"
+# Calculate various network masks, etc. from a given IP address
+brew "ipcalc"
+
+
+brew "fish"
+
+brew "graphviz"
+brew "lftp"
+brew "markdown"
+brew "mkcert"
+brew "mtr"
+brew "mysql-client"
+brew "newrelic-cli"
+brew "nghttp2"
+brew "nmap"
+brew "nss"
+brew "pigz"
+brew "pipenv"
+brew "pwgen"
+brew "qrencode"
+brew "ripgrep"
+brew "telnet"
+brew "tmux"
+brew "tree"
+
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
+
+brew "watch"
+brew "wget"
+cask "1password-cli"
+cask "cyberduck"
+cask "dbeaver-community"
+cask "discord"
+cask "font-hack"
+cask "itsycal"
+cask "postman"
+cask "redisinsight"
+cask "tunnelblick"
