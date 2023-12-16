@@ -56,16 +56,18 @@ brew "hashicorp/tap/packer"
 brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
 
-## AWS
+## Clouds
 brew "awscli"
 cask "aws-vault"
 brew "infracost"
+cask "yandex-cloud-cli"
 
 ## Kubernetes
 brew "kubernetes-cli"
 brew "krew"
 brew "kubectx"
 brew "k9s"
+cask "lens"
 brew "helm"
 brew "minikube"
 # Command-line interactive controller for Kubernetes: REPL for to manage a large number of Kubernetes clusters/objects quickly and efficiently
