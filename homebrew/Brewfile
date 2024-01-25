@@ -94,6 +94,8 @@ brew "fd"
 brew "gping"
 # Calculate various network masks, etc. from a given IP address
 brew "ipcalc"
+# ZeroTier
+cask "zerotier-one"
 
 
 brew "fish"
@@ -131,3 +133,6 @@ cask "itsycal"
 cask "postman"
 cask "redisinsight"
 cask "tunnelblick"
+
+## Media
+cask "vlc"
