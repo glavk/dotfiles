@@ -35,6 +35,7 @@ brew "isort"
 brew "python-markupsafe"
 brew "iredis"
 brew "jq"
+cask "zed"
 
 ## Ansible
 brew "ansible"
@@ -77,6 +78,9 @@ brew "click"
 brew "gh"
 # Running GitHub Actions locally
 brew "act"
+
+## Docker
+brew "dive"
 
 
 brew "asciinema"
