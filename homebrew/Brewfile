@@ -57,6 +57,9 @@ brew "hashicorp/tap/packer"
 brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
 
+## Pulumi
+brew "pulumi"
+
 ## Clouds
 brew "awscli"
 cask "aws-vault"
