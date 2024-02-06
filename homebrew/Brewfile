@@ -73,6 +73,7 @@ brew "kubectx"
 brew "k9s"
 cask "lens"
 brew "helm"
+brew "chart-testing"
 brew "minikube"
 # Command-line interactive controller for Kubernetes: REPL for to manage a large number of Kubernetes clusters/objects quickly and efficiently
 brew "click"
