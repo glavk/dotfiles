@@ -144,3 +144,6 @@ cask "tunnelblick"
 
 ## Media
 cask "vlc"
+
+## Browsers
+cask "firefox"
