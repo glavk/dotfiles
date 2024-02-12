@@ -147,3 +147,7 @@ cask "vlc"
 
 ## Browsers
 cask "firefox"
+
+## shell
+brew "zsh-completion"
+brew "zsh"
