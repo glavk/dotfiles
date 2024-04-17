@@ -154,8 +154,4 @@ cask "firefox"
 brew "zsh-completion"
 brew "zsh"
 
-## teleport
-brew "tctl"
-# tsh installed via website
-
 brew "hurl"
