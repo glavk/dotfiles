@@ -56,6 +56,7 @@ brew "tfsec"
 brew "hashicorp/tap/packer"
 brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
+brew "inframap"
 
 ## Pulumi
 brew "pulumi"
