@@ -156,3 +156,5 @@ brew "zsh-completion"
 brew "zsh"
 
 brew "hurl"
+
+cask "raycast"
