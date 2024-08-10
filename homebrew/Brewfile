@@ -158,3 +158,5 @@ brew "zsh"
 brew "hurl"
 
 cask "raycast"
+
+cask "vnc-viewer"
