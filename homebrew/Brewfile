@@ -2,10 +2,9 @@ tap "1password/tap"
 tap "aws/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "minamijoyo/hcledit"
-tap "railwaycat/emacsmacport"
+#tap "railwaycat/emacsmacport"
 
 ## Programming languages
 brew "go"
@@ -14,14 +13,11 @@ brew "node"
 brew "python@3.12"
 
 ## Dependencies for programming languages
-# required by emacs, gnupg and gnutls
-brew "unbound"
 brew "gnupg"
 
 ## IDE with tools
-brew "ipython"
+#brew "ipython"
 brew "neovim"
-brew "emacs"
 brew "yamllint"
 brew "shellcheck"
 brew "staticcheck"
@@ -29,12 +25,12 @@ brew "hadolint"
 brew "pre-commit"
 brew "git"
 brew "git-secrets"
-brew "git-vendor"
+#brew "git-vendor"
 # Sort Python imports automatically
 brew "isort"
-brew "python-markupsafe"
 brew "iredis"
 brew "jq"
+
 cask "zed"
 
 ## Ansible
@@ -54,19 +50,20 @@ brew "tfk8s"
 brew "tflint"
 brew "tfsec"
 brew "hashicorp/tap/packer"
-brew "localstack"
+#brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
-brew "inframap"
+#brew "inframap"
 
 ## Pulumi
-brew "pulumi"
+#brew "pulumi"
 
 ## Clouds
 brew "awscli"
-brew "aws-shell"
-cask "aws-vault"
-brew "infracost"
 cask "yandex-cloud-cli"
+
+#brew "aws-shell"
+#cask "aws-vault"
+#brew "infracost"
 
 ## Kubernetes
 brew "kubernetes-cli"
@@ -78,7 +75,7 @@ brew "helm"
 brew "chart-testing"
 brew "minikube"
 # Command-line interactive controller for Kubernetes: REPL for to manage a large number of Kubernetes clusters/objects quickly and efficiently
-brew "click"
+#brew "click"
 
 ## GitHub
 brew "gh"
@@ -87,7 +84,6 @@ brew "act"
 
 ## Docker
 brew "dive"
-
 
 brew "asciinema"
 brew "bash-completion"
@@ -99,7 +95,7 @@ brew "gnutls"
 
 ## Utils
 # Simple, fast and user-friendly alternative to find
-brew "fd"
+#brew "fd"
 # Ping, but with a graph
 brew "gping"
 # Calculate various network masks, etc. from a given IP address
@@ -114,10 +110,10 @@ brew "fish"
 brew "graphviz"
 brew "lftp"
 brew "markdown"
-brew "mkcert"
+#brew "mkcert"
 brew "mtr"
 brew "mysql-client"
-brew "newrelic-cli"
+#brew "newrelic-cli"
 brew "nghttp2"
 brew "nmap"
 brew "nss"
@@ -136,14 +132,14 @@ brew "trivy"
 brew "watch"
 brew "wget"
 cask "1password-cli"
-cask "cyberduck"
+#cask "cyberduck"
 cask "dbeaver-community"
-cask "discord"
-cask "font-hack"
+#cask "discord"
+#cask "font-hack"
 cask "itsycal"
-cask "postman"
-cask "redisinsight"
-cask "tunnelblick"
+#cask "postman"
+#cask "redisinsight"
+#cask "tunnelblick"
 
 ## Media
 cask "vlc"
@@ -155,8 +151,10 @@ cask "firefox"
 brew "zsh-completion"
 brew "zsh"
 
-brew "hurl"
+#brew "hurl"
 
 cask "raycast"
 
 cask "vnc-viewer"
+
+brew "zsh-autosuggestions"
