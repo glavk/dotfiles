@@ -139,7 +139,7 @@ cask "dbeaver-community"
 cask "itsycal"
 #cask "postman"
 #cask "redisinsight"
-#cask "tunnelblick"
+cask "tunnelblick"
 
 ## Media
 cask "vlc"
