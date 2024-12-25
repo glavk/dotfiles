@@ -3,17 +3,12 @@ tap "aws/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "minamijoyo/hcledit"
-#tap "railwaycat/emacsmacport"
 
 ## Programming languages
 brew "go"
 brew "gopls"
 brew "node"
 brew "python@3.12"
-
-## Dependencies for programming languages
-brew "gnupg"
 
 ## IDE with tools
 #brew "ipython"
@@ -30,9 +25,9 @@ brew "git-secrets"
 brew "isort"
 brew "iredis"
 brew "jq"
-cask "github"
 cask "zed"
 brew "argo"
+brew "gnupg"
 
 ## Ansible
 brew "ansible"
@@ -56,15 +51,14 @@ brew "minamijoyo/hcledit/hcledit"
 #brew "inframap"
 
 ## Pulumi
-#brew "pulumi"
+brew "pulumi"
 
 ## Clouds
 brew "awscli"
 cask "yandex-cloud-cli"
+brew "infracost"
 
-#brew "aws-shell"
 #cask "aws-vault"
-#brew "infracost"
 
 ## Kubernetes
 brew "kubernetes-cli"
@@ -79,6 +73,7 @@ brew "minikube"
 #brew "click"
 
 ## GitHub
+cask "github"
 brew "gh"
 # Running GitHub Actions locally
 brew "act"
@@ -101,7 +96,6 @@ brew "gnutls"
 brew "gping"
 # Calculate various network masks, etc. from a given IP address
 brew "ipcalc"
-# ZeroTier
 cask "zerotier-one"
 cask "drawio"
 
@@ -150,6 +144,7 @@ cask "firefox"
 ## shell
 brew "zsh-completion"
 brew "zsh"
+brew "zsh-autosuggestions"
 
 #brew "hurl"
 
@@ -157,8 +152,10 @@ cask "raycast"
 
 cask "vnc-viewer"
 
-brew "zsh-autosuggestions"
 brew "openconnect"
 brew "hurl"
 
 cask "vnc-viewer"
+
+# Security
+brew "sops"
