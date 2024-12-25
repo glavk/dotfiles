@@ -3,12 +3,14 @@ tap "aws/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "clojure/tools"
 
 ## Programming languages
 brew "go"
 brew "gopls"
 brew "node"
 brew "python@3.12"
+brew "clojure/tools/clojure"
 
 ## IDE with tools
 #brew "ipython"
