@@ -163,4 +163,4 @@ cask "vnc-viewer"
 # Security
 brew "sops"
 
-brew "jordanbaird-ice"
+cask "jordanbaird-ice"
