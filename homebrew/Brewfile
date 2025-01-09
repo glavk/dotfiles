@@ -39,7 +39,7 @@ brew "ansible-language-server"
 brew "molecule"
 
 ## Hashicorp tools: terraform, packer
-brew "terraform"
+brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/terraform-ls"
 brew "terraform-docs"
 brew "terraformer", args: ["HEAD"]
