@@ -10,6 +10,7 @@ brew "go"
 brew "gopls"
 brew "node"
 brew "python@3.12"
+brew "php"
 brew "clojure/tools/clojure"
 cask "temurin@21"
 
