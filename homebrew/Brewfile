@@ -23,6 +23,7 @@ brew "staticcheck"
 brew "hadolint"
 brew "pre-commit"
 brew "git"
+brew "gitleaks"
 brew "git-secrets"
 #brew "git-vendor"
 # Sort Python imports automatically
