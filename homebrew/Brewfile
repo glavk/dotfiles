@@ -33,6 +33,7 @@ brew "jq"
 cask "zed"
 brew "argo"
 brew "gnupg"
+cask "ghostty"
 
 ## Ansible
 brew "ansible"
