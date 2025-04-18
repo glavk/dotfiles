@@ -13,6 +13,7 @@ brew "python@3.12"
 brew "php"
 brew "clojure/tools/clojure"
 cask "temurin@21"
+brew "rust"
 
 ## IDE with tools
 #brew "ipython"
