@@ -4,6 +4,7 @@ tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "clojure/tools"
+tap "alesbrelih/gitlab-ci-ls"
 
 ## Programming languages
 brew "go"
@@ -36,6 +37,14 @@ brew "argo"
 brew "gnupg"
 cask "ghostty"
 
+## GitLab
+brew "glab"
+brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"
+
+## LLM
+brew "uv"
+cask "claude"
+
 ## Ansible
 brew "ansible"
 brew "ansible-lint"
@@ -43,7 +52,7 @@ brew "ansible-language-server"
 brew "molecule"
 
 ## Hashicorp tools: terraform, packer
-brew "hashicorp/tap/terraform"
+#brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/terraform-ls"
 brew "terraform-docs"
 brew "terraformer", args: ["HEAD"]
