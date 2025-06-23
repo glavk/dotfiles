@@ -68,6 +68,7 @@ brew "hashicorp/tap/packer"
 #brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
 #brew "inframap"
+brew "opentofu"
 
 ## Pulumi
 brew "pulumi"
@@ -94,8 +95,6 @@ brew "minikube"
 ## GitHub
 cask "github"
 brew "gh"
-# Running GitHub Actions locally
-brew "act"
 
 ## Docker
 brew "dive"
