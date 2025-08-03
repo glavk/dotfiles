@@ -34,7 +34,7 @@ brew "jq"
 cask "zed"
 brew "argo"
 brew "gnupg"
-<<<<<<< HEAD
+
 cask "ghostty"
 
 ## GitLab
@@ -44,9 +44,8 @@ brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"
 ## LLM
 brew "uv"
 cask "claude"
-=======
+
 brew "pyinstaller"
->>>>>>> 00de171 (feat: add pyinstaller)
 
 ## Ansible
 brew "ansible"
@@ -118,6 +117,8 @@ cask "zerotier-one"
 cask "drawio"
 
 brew "fish"
+
+brew "detect-secrets"
 
 brew "graphviz"
 brew "lftp"
