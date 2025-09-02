@@ -68,7 +68,7 @@ brew "hashicorp/tap/packer"
 #brew "localstack"
 brew "minamijoyo/hcledit/hcledit"
 #brew "inframap"
-brew "opentofu"
+#brew "opentofu"
 
 ## Pulumi
 brew "pulumi"
@@ -181,3 +181,5 @@ cask "vnc-viewer"
 brew "sops"
 
 cask "jordanbaird-ice"
+
+cask "element"
