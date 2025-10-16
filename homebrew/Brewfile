@@ -41,10 +41,12 @@ cask "ghostty"
 brew "glab"
 brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"
 
-## LLM
+## AI
 brew "uv"
 cask "claude"
 cask "claude-code"
+cask "gemini-cli"
+
 
 brew "pyinstaller"
 
@@ -183,3 +185,5 @@ brew "sops"
 cask "jordanbaird-ice"
 
 cask "element"
+
+brew "qemu"
