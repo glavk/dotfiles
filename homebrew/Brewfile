@@ -1,189 +1,212 @@
-tap "1password/tap"
-tap "aws/tap"
-tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "clojure/tools"
-tap "alesbrelih/gitlab-ci-ls"
+# Taps
+tap "1password/tap"                              # 1Password CLI tap
+tap "alesbrelih/gitlab-ci-ls"                    # GitLab CI language server tap
+tap "aws/tap"                                    # Official AWS tap
+tap "clojure/tools"                              # Clojure official tap
+tap "hashicorp/tap"                              # HashiCorp tools tap (terraform-ls, packer, ...)
+tap "homebrew/bundle"                            # `brew bundle` command support
+tap "homebrew/services"                          # `brew services` command support
 
-## Programming languages
-brew "go"
-brew "gopls"
-brew "node"
-brew "python@3.12"
-brew "php"
-brew "clojure/tools/clojure"
-cask "temurin@21"
-brew "rust"
+## Programming languages and runtimes
+brew "clojure/tools/clojure"                     # Clojure language and CLI
+brew "go"                                        # Go programming language
+brew "luarocks"                                  # Lua package manager
+brew "node"                                      # Node.js JavaScript runtime
+brew "php"                                       # PHP language
+brew "python@3.12"                               # Python 3.12 interpreter
+cask "temurin@21"                                # Eclipse Temurin OpenJDK 21
 
-## IDE with tools
-#brew "ipython"
-brew "neovim"
-brew "yamllint"
-brew "shellcheck"
-brew "staticcheck"
-brew "hadolint"
-brew "pre-commit"
-brew "git"
-brew "gitleaks"
-brew "git-secrets"
-#brew "git-vendor"
-brew "isort"
-brew "iredis"
-brew "jq"
-cask "zed"
-brew "argo"
-brew "gnupg"
+## Python tooling
+brew "isort"                                     # Sort Python imports
+brew "pipenv"                                    # Python virtualenv + dependency manager
+brew "pipx"                                      # Install Python CLI apps in isolated envs
+brew "pyinstaller"                               # Bundle Python apps into standalone executables
+brew "uv"                                        # Fast Python package installer / resolver
 
-cask "ghostty"
+## Editors and IDEs
+brew "neovim"                                    # Modern vim-based editor
+cask "obsidian"                                  # Markdown knowledge-base / notes app
+cask "zed"                                       # Fast multi-cursor code editor
+#brew "ipython"                                  # Interactive Python REPL
+# TODO:
+# cask "intellij-idea-oss"                       # IntelliJ IDEA Community
 
-## GitLab
-brew "glab"
-brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"
+## Terminals, shell, multiplexer
+brew "bash"                                      # GNU Bash (newer than macOS built-in 3.2)
+brew "fish"                                      # Friendly interactive shell
+brew "tmux"                                      # Terminal multiplexer
+brew "tmuxinator"                                # tmux session manager
+brew "zsh"                                       # Z shell
+brew "zsh-autosuggestions"                       # Fish-like autosuggestions for zsh
+brew "zsh-completion"                            # Extra completions for zsh (alias of zsh-completions)
+cask "ghostty"                                   # Modern GPU-accelerated terminal
 
-## AI
-brew "uv"
-cask "claude"
-cask "claude-code"
-cask "gemini-cli"
+## Window managers, launchers, menu bar
+cask "itsycal"                                   # Tiny menu-bar calendar
+cask "jordanbaird-ice"                           # Menu-bar icon hider (Ice)
+cask "nikitabobko/tap/aerospace"                 # i3-like tiling window manager for macOS
+cask "raycast"                                   # Spotlight replacement / launcher
 
+## AI tools
+brew "gemini-cli"                                # Google Gemini CLI
+brew "opencode"                                  # OpenCode terminal AI coding agent
+cask "chatgpt"                                   # ChatGPT desktop app
+cask "claude"                                    # Claude desktop app
+cask "claude-code"                               # Claude Code (Anthropic CLI installer)
+cask "codex"                                     # OpenAI Codex coding agent (CLI cask)
+cask "codex-app"                                 # OpenAI Codex desktop app
+# TODO:
+# cask "google-gemini"                           # Gemini desktop app
 
-brew "pyinstaller"
+## Git and code hosting
+brew "gh"                                        # GitHub CLI
+brew "git"                                       # Git VCS
+brew "glab"                                      # GitLab CLI
+brew "lazygit"                                   # Terminal UI for git
+cask "github"                                    # GitHub Desktop GUI
+#brew "git-vendor"                               # Vendor git subtrees as dependencies
 
-## Ansible
-brew "ansible"
-brew "ansible-lint"
-brew "ansible-language-server"
-brew "molecule"
+## Linters, formatters, language servers
+brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"      # Language server for GitLab CI YAML
+brew "gopls"                                     # Official Go language server
+brew "hadolint"                                  # Dockerfile linter
+brew "hashicorp/tap/terraform-ls"                # Terraform language server
+brew "pre-commit"                                # Pre-commit hook framework
+brew "shellcheck"                                # Shell script static analyzer
+brew "staticcheck"                               # Go static analyzer
+brew "yamllint"                                  # YAML linter
 
-## Hashicorp tools: terraform, packer
-#brew "hashicorp/tap/terraform"
-brew "hashicorp/tap/terraform-ls"
-brew "terraform-docs"
-brew "terraformer", args: ["HEAD"]
-brew "terragrunt"
-brew "terrascan"
-brew "tfk8s"
-brew "tflint"
-brew "tfsec"
-brew "hashicorp/tap/packer"
-#brew "localstack"
-brew "minamijoyo/hcledit/hcledit"
-#brew "inframap"
-#brew "opentofu"
+## Secrets, scanning, security
+brew "detect-secrets"                            # Yelp's secrets scanner
+brew "git-secrets"                               # Block committing secrets via git hooks
+brew "gitleaks"                                  # Scan git history for leaked secrets
+brew "gnupg"                                     # GnuPG: OpenPGP encryption / signing
+brew "sops"                                      # Mozilla SOPS: encrypted config files
+brew "trivy"                                     # Vulnerability scanner for images / FS / git
+cask "1password-cli"                             # 1Password CLI (`op`)
 
-## Pulumi
-brew "pulumi"
+## Cloud CLIs
+brew "awscli"                                    # AWS command-line interface
+brew "infracost"                                 # Cloud cost estimates for Terraform plans
+cask "yandex-cloud-cli"                          # Yandex.Cloud CLI (`yc`)
+#cask "aws-vault"                                # Secure storage / IAM session tooling for AWS
 
-## Clouds
-brew "awscli"
-cask "yandex-cloud-cli"
-brew "infracost"
+## Infrastructure as Code: HashiCorp stack
+brew "hashicorp/tap/packer"                      # HashiCorp Packer: build machine images
+brew "hashicorp/tap/terraform"                   # HashiCorp Terraform
+brew "minamijoyo/hcledit/hcledit"                # CLI editor for HCL config files
+brew "tf-summarize"                              # Summarize `terraform plan` output
+brew "terraform-docs"                            # Generate docs from Terraform modules
+brew "terraformer", args: ["HEAD"]               # Generate Terraform code from existing infra
+brew "terragrunt"                                # Terraform wrapper (keep configs DRY)
+brew "terrascan"                                 # Static analysis / policy for Terraform
+brew "tfk8s"                                     # Convert Kubernetes YAML to Terraform HCL
+brew "tflint"                                    # Terraform linter
+brew "tfsec"                                     # Terraform security scanner
+#brew "inframap"                                 # Visualize Terraform state as a diagram
+#brew "localstack"                               # Local AWS cloud stack
+#brew "opentofu"                                 # OpenTofu (community Terraform fork)
+#brew "tfenv"                                     # Terraform version manager
 
-#cask "aws-vault"
+## Infrastructure as Code: other
+brew "pulumi"                                    # Pulumi IaC (TS/Go/Python/etc)
+
+## Configuration management
+brew "ansible"                                   # Ansible automation
+brew "ansible-language-server"                   # Ansible LSP
+brew "ansible-lint"                              # Ansible playbook linter
+brew "molecule"                                  # Ansible role testing framework
 
 ## Kubernetes
-brew "kubernetes-cli"
-brew "krew"
-brew "kubectx"
-brew "k9s"
-cask "lens"
-brew "helm"
-brew "chart-testing"
-brew "minikube"
-# Command-line interactive controller for Kubernetes: REPL for to manage a large number of Kubernetes clusters/objects quickly and efficiently
-#brew "click"
+brew "argo"                                      # Argo Workflows CLI
+brew "argocd"                                    # Argo CD CLI (GitOps for Kubernetes)
+brew "chart-testing"                             # Lint and test Helm charts (`ct`)
+brew "helm"                                      # Kubernetes package manager
+brew "k8sgpt"                                    # AI-powered Kubernetes diagnostics
+brew "k9s"                                       # Terminal UI for Kubernetes clusters
+brew "krew"                                      # kubectl plugin manager
+brew "kubectx"                                   # Switch kube contexts / namespaces
+brew "kubernetes-cli"                            # `kubectl`
+brew "kubie"                                     # Alternative kubectx/kubens with shell prompt
+brew "minikube"                                  # Local single-node Kubernetes
+cask "lens"                                      # Kubernetes IDE
+#brew "click"                                    # Interactive kubectl REPL (CLI controller)
 
-## GitHub
-cask "github"
-brew "gh"
+## Containers
+brew "dive"                                      # Explore Docker image layers
+cask "docker"                                    # Docker CLI tooling (cask)
+cask "docker-desktop"                            # Docker Desktop GUI for macOS
 
-## Docker
-brew "dive"
+## Remote access, VPN, tunneling
+brew "sing-box"                                  # Universal proxy platform
+brew "teleport"                                  # Teleport: SSH / k8s / DB access proxy
+cask "clash-verge-rev"                           # Clash Verge Rev — proxy / VPN client
+cask "cyberduck"                                 # SFTP / S3 / cloud storage GUI
+cask "tunnelblick"                               # OpenVPN GUI for macOS
+cask "vnc-viewer"                                # RealVNC viewer
+cask "zerotier-one"                              # ZeroTier SDN / virtual networking
 
-brew "asciinema"
-brew "bash-completion"
-brew "fontconfig"
+## Networking utilities
+brew "certbot"                                   # Let's Encrypt ACME client (TLS certs)
+brew "gping"                                     # Ping with a live graph
+brew "hurl"                                      # HTTP testing in plain text files
+brew "ipcalc"                                    # IP / subnet calculator
+brew "mtr"                                       # Network diagnostic (ping + traceroute)
+brew "nghttp2"                                   # HTTP/2 client, server, library
+brew "nmap"                                      # Network scanner
+brew "telnet"                                    # Telnet client
+brew "wget"                                      # HTTP / FTP downloader
+#brew "mkcert"                                   # Local-CA dev certificate tool
+#brew "newrelic-cli"                             # New Relic command-line client
+#cask "postman"                                  # Postman API testing GUI
 
-brew "cmake"
-brew "coreutils"
-brew "gnutls"
+## Databases and data tools
+brew "iredis"                                    # Interactive Redis CLI with completion
+brew "jq"                                        # JSON processor
+brew "mysql-client"                              # MySQL command-line client (no server)
+brew "mysql-client@8.0"                          # MySQL 8.0 client (pinned, parallel to latest)
+brew "yq"                                        # YAML / JSON / XML processor
+cask "dbeaver-community"                         # Universal database GUI
+#cask "redisinsight"                             # Redis GUI by Redis Labs
 
-## Utils
-# Simple, fast and user-friendly alternative to find
-#brew "fd"
-# Ping, but with a graph
-brew "gping"
-# Calculate various network masks, etc. from a given IP address
-brew "ipcalc"
-cask "zerotier-one"
-cask "drawio"
+## CLI search and file utilities
+brew "fd"                                        # Modern `find` replacement
+brew "fzf"                                       # Fuzzy finder
+brew "lftp"                                      # Scriptable FTP / SFTP client
+brew "ncdu"                                      # Disk-usage analyzer (ncurses)
+brew "ripgrep"                                   # Fast recursive grep (`rg`)
+brew "tree"                                      # Print directory tree
+brew "watch"                                     # Run a command periodically and watch output
 
-brew "fish"
+## General system utilities
+brew "asciinema"                                 # Record terminal sessions
+brew "bash-completion"                           # Bash completion definitions
+brew "cmake"                                     # Cross-platform build system
+brew "coreutils"                                 # GNU coreutils (`g`-prefixed on macOS)
+brew "fontconfig"                                # Font configuration library
+brew "glow"                                      # Render Markdown in the terminal
+brew "gnutls"                                    # GnuTLS TLS / SSL library
+brew "graphviz"                                  # Graph visualization (`dot`, etc.)
+brew "markdown"                                  # Reference Markdown-to-HTML converter
+brew "nss"                                       # Mozilla NSS crypto / TLS library
+brew "pigz"                                      # Parallel gzip
+brew "pwgen"                                     # Password generator
+brew "qrencode"                                  # Generate QR codes from the CLI
+#cask "font-hack"                                # Hack font for source code
 
-brew "detect-secrets"
-
-brew "graphviz"
-brew "lftp"
-brew "markdown"
-#brew "mkcert"
-brew "mtr"
-brew "mysql-client"
-#brew "newrelic-cli"
-brew "nghttp2"
-brew "nmap"
-brew "nss"
-brew "pigz"
-brew "pipenv"
-brew "pwgen"
-brew "qrencode"
-brew "ripgrep"
-brew "telnet"
-brew "tmux"
-brew "tree"
-
-# Vulnerability scanner for container images, file systems, and Git repos
-brew "trivy"
-
-brew "watch"
-brew "wget"
-cask "1password-cli"
-#cask "cyberduck"
-cask "dbeaver-community"
-#cask "discord"
-#cask "font-hack"
-cask "itsycal"
-#cask "postman"
-#cask "redisinsight"
-cask "tunnelblick"
-
-## Media
-cask "vlc"
+## Productivity, diagrams, communication
+cask "drawio"                                    # draw.io diagram editor (desktop)
+cask "element"                                   # Matrix client
+brew "telegram-downloader"                       # Download media from Telegram
+#cask "discord"                                  # Discord chat client
 
 ## Browsers
-cask "firefox"
+cask "firefox"                                   # Firefox browser
 
-## shell
-brew "zsh-completion"
-brew "zsh"
-brew "zsh-autosuggestions"
+## Media and audio
+cask "handy"                                     # Speech-to-text dictation
+cask "vlc"                                       # VLC media player
 
-#brew "hurl"
-
-cask "raycast"
-
-cask "vnc-viewer"
-
-brew "openconnect"
-brew "hurl"
-
-cask "vnc-viewer"
-
-# Security
-brew "sops"
-
-cask "jordanbaird-ice"
-
-cask "element"
-
-brew "qemu"
+## Virtualization
+brew "qemu"                                      # QEMU machine emulator and virtualizer
+cask "utm"                                       # UTM: VM manager for macOS (QEMU frontend)
