@@ -86,7 +86,7 @@ brew "fwknop"                                    # Single Packet Authorization a
 brew "awscli"                                    # AWS command-line interface
 brew "infracost"                                 # Cloud cost estimates for Terraform plans
 cask "yandex-cloud-cli"                          # Yandex.Cloud CLI (`yc`)
-cask "hashicorp/tap/vault"
+#cask "hashicorp/tap/vault"
 
 ## Infrastructure as Code: HashiCorp stack
 brew "hashicorp/tap/packer"                      # HashiCorp Packer: build machine images
@@ -130,7 +130,7 @@ cask "lens"                                      # Kubernetes IDE
 brew "dive"                                      # Explore Docker image layers
 #cask "docker"                                    # Docker CLI tooling (cask)
 #cask "docker-desktop"                            # Docker Desktop GUI for macOS
-brew "orbstack"                                  # OrbStack run containers and Linux machines
+cask "orbstack"                                  # OrbStack run containers and Linux machines
 
 ## Remote access, VPN, tunneling
 brew "sing-box"                                  # Universal proxy platform
