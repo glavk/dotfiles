@@ -27,19 +27,17 @@ brew "uv"                                        # Fast Python package installer
 brew "neovim"                                    # Modern vim-based editor
 cask "obsidian"                                  # Markdown knowledge-base / notes app
 cask "zed"                                       # Fast multi-cursor code editor
-#brew "ipython"                                  # Interactive Python REPL
-# TODO:
-# cask "intellij-idea-oss"                       # IntelliJ IDEA Community
 
 ## Terminals, shell, multiplexer
 brew "bash"                                      # GNU Bash (newer than macOS built-in 3.2)
 brew "fish"                                      # Friendly interactive shell
 brew "tmux"                                      # Terminal multiplexer
-brew "tmuxinator"                                # tmux session manager
 brew "zsh"                                       # Z shell
 brew "zsh-autosuggestions"                       # Fish-like autosuggestions for zsh
 brew "zsh-completion"                            # Extra completions for zsh (alias of zsh-completions)
 cask "ghostty"                                   # Modern GPU-accelerated terminal
+cask "umputun/apps/agterm"
+brew "umputun/apps/local-docs-mcp"
 
 ## Window managers, launchers, menu bar
 cask "itsycal"                                   # Tiny menu-bar calendar
@@ -48,23 +46,21 @@ cask "nikitabobko/tap/aerospace"                 # i3-like tiling window manager
 cask "raycast"                                   # Spotlight replacement / launcher
 
 ## AI tools
-brew "gemini-cli"                                # Google Gemini CLI
+brew "ollama"
 brew "opencode"                                  # OpenCode terminal AI coding agent
+brew "aicommit2" 
 cask "chatgpt"                                   # ChatGPT desktop app
 cask "claude"                                    # Claude desktop app
 cask "claude-code"                               # Claude Code (Anthropic CLI installer)
 cask "codex"                                     # OpenAI Codex coding agent (CLI cask)
 cask "codex-app"                                 # OpenAI Codex desktop app
-# TODO:
-# cask "google-gemini"                           # Gemini desktop app
+brew "mcp-grafana"
 
 ## Git and code hosting
 brew "gh"                                        # GitHub CLI
 brew "git"                                       # Git VCS
 brew "glab"                                      # GitLab CLI
 brew "lazygit"                                   # Terminal UI for git
-cask "github"                                    # GitHub Desktop GUI
-#brew "git-vendor"                               # Vendor git subtrees as dependencies
 
 ## Linters, formatters, language servers
 brew "alesbrelih/gitlab-ci-ls/gitlab-ci-ls"      # Language server for GitLab CI YAML
@@ -84,12 +80,13 @@ brew "gnupg"                                     # GnuPG: OpenPGP encryption / s
 brew "sops"                                      # Mozilla SOPS: encrypted config files
 brew "trivy"                                     # Vulnerability scanner for images / FS / git
 cask "1password-cli"                             # 1Password CLI (`op`)
+brew "fwknop"                                    # Single Packet Authorization and Port Knocking
 
 ## Cloud CLIs
 brew "awscli"                                    # AWS command-line interface
 brew "infracost"                                 # Cloud cost estimates for Terraform plans
 cask "yandex-cloud-cli"                          # Yandex.Cloud CLI (`yc`)
-#cask "aws-vault"                                # Secure storage / IAM session tooling for AWS
+cask "hashicorp/tap/vault"
 
 ## Infrastructure as Code: HashiCorp stack
 brew "hashicorp/tap/packer"                      # HashiCorp Packer: build machine images
@@ -109,7 +106,7 @@ brew "tfsec"                                     # Terraform security scanner
 #brew "tfenv"                                     # Terraform version manager
 
 ## Infrastructure as Code: other
-brew "pulumi"                                    # Pulumi IaC (TS/Go/Python/etc)
+#brew "pulumi"                                    # Pulumi IaC (TS/Go/Python/etc)
 
 ## Configuration management
 brew "ansible"                                   # Ansible automation
@@ -122,25 +119,22 @@ brew "argo"                                      # Argo Workflows CLI
 brew "argocd"                                    # Argo CD CLI (GitOps for Kubernetes)
 brew "chart-testing"                             # Lint and test Helm charts (`ct`)
 brew "helm"                                      # Kubernetes package manager
-brew "k8sgpt"                                    # AI-powered Kubernetes diagnostics
 brew "k9s"                                       # Terminal UI for Kubernetes clusters
 brew "krew"                                      # kubectl plugin manager
 brew "kubectx"                                   # Switch kube contexts / namespaces
 brew "kubernetes-cli"                            # `kubectl`
 brew "kubie"                                     # Alternative kubectx/kubens with shell prompt
-brew "minikube"                                  # Local single-node Kubernetes
 cask "lens"                                      # Kubernetes IDE
-#brew "click"                                    # Interactive kubectl REPL (CLI controller)
 
 ## Containers
 brew "dive"                                      # Explore Docker image layers
-cask "docker"                                    # Docker CLI tooling (cask)
-cask "docker-desktop"                            # Docker Desktop GUI for macOS
+#cask "docker"                                    # Docker CLI tooling (cask)
+#cask "docker-desktop"                            # Docker Desktop GUI for macOS
+brew "orbstack"                                  # OrbStack run containers and Linux machines
 
 ## Remote access, VPN, tunneling
 brew "sing-box"                                  # Universal proxy platform
 brew "teleport"                                  # Teleport: SSH / k8s / DB access proxy
-cask "clash-verge-rev"                           # Clash Verge Rev — proxy / VPN client
 cask "cyberduck"                                 # SFTP / S3 / cloud storage GUI
 cask "tunnelblick"                               # OpenVPN GUI for macOS
 cask "vnc-viewer"                                # RealVNC viewer
@@ -167,7 +161,6 @@ brew "mysql-client"                              # MySQL command-line client (no
 brew "mysql-client@8.0"                          # MySQL 8.0 client (pinned, parallel to latest)
 brew "yq"                                        # YAML / JSON / XML processor
 cask "dbeaver-community"                         # Universal database GUI
-#cask "redisinsight"                             # Redis GUI by Redis Labs
 
 ## CLI search and file utilities
 brew "fd"                                        # Modern `find` replacement
@@ -197,7 +190,7 @@ brew "qrencode"                                  # Generate QR codes from the CL
 ## Productivity, diagrams, communication
 cask "drawio"                                    # draw.io diagram editor (desktop)
 cask "element"                                   # Matrix client
-brew "telegram-downloader"                       # Download media from Telegram
+#brew "telegram-downloader"                       # Download media from Telegram
 #cask "discord"                                  # Discord chat client
 
 ## Browsers
@@ -209,4 +202,4 @@ cask "vlc"                                       # VLC media player
 
 ## Virtualization
 brew "qemu"                                      # QEMU machine emulator and virtualizer
-cask "utm"                                       # UTM: VM manager for macOS (QEMU frontend)
+#cask "utm"                                       # UTM: VM manager for macOS (QEMU frontend)
